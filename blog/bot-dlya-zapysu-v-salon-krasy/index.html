@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Бот для запису в салон краси: як працює і скільки коштує | BotCraft Group</title>
+<meta name="description" content="Бот для запису в салон краси: як виглядає запис для клієнтки, що бачить адміністратор, синхронізація з Google Calendar і чому це краще за Instagram-директ від трьох майстрів. Ціна $79 + $12/міс.">
+<meta name="keywords" content="бот для запису в салон краси, telegram бот салон краси, онлайн запис салон, бот запису манікюр, автоматизація салону краси">
+<meta name="author" content="Charlie Morrison">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Бот для запису в салон краси: як працює і скільки коштує">
+<meta property="og:description" content="Запис у салон краси через Telegram-бота: кнопки замість переписки, нагадування напередодні, один розклад на всіх майстрів. $79 налаштування + $12/міс.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://botcraftgroup.com/blog/bot-dlya-zapysu-v-salon-krasy/">
+<meta property="og:image" content="https://botcraftgroup.com/og/default.png">
+<meta property="og:locale" content="uk_UA">
+<meta property="article:published_time" content="2026-07-09T09:30:00+03:00">
+<meta property="article:author" content="Charlie Morrison">
+<link rel="canonical" href="https://botcraftgroup.com/blog/bot-dlya-zapysu-v-salon-krasy/">
+<link rel="alternate" hreflang="uk" href="https://botcraftgroup.com/blog/bot-dlya-zapysu-v-salon-krasy/">
+<link rel="alternate" hreflang="x-default" href="https://botcraftgroup.com/blog/bot-dlya-zapysu-v-salon-krasy/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0a0a;color:#e0e0e0;min-height:100vh;line-height:1.6}
+a{color:#00b4d8;text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{text-align:center;padding:3rem 1rem 2rem;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%)}
+.hero h1{font-size:2.1rem;margin-bottom:.6rem;background:linear-gradient(90deg,#00b4d8,#90e0ef);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.25;max-width:760px;margin-left:auto;margin-right:auto}
+.hero .sub{color:#8899aa;font-size:1.05rem;max-width:600px;margin:.6rem auto 0}
+.hero .meta{color:#556;font-size:.85rem;margin-top:1rem}
+.crumbs{max-width:760px;margin:1.5rem auto 0;padding:0 1rem;font-size:.85rem;color:#7a8a99}
+.crumbs a{color:#77aacc}
+article{max-width:760px;margin:1.5rem auto;padding:0 1rem}
+article h2{color:#fff;font-size:1.5rem;margin:2rem 0 .8rem;border-left:3px solid #00b4d8;padding-left:.8rem}
+article h3{color:#cdd6e0;font-size:1.15rem;margin:1.4rem 0 .5rem}
+article p{color:#cdd6e0;margin-bottom:1rem}
+article ul,article ol{margin:0 0 1rem 1.5rem;color:#cdd6e0}
+article li{margin-bottom:.4rem}
+article strong{color:#fff}
+article em{color:#90e0ef;font-style:normal;background:#0f1a2e;padding:0 6px;border-radius:4px}
+.tldr{background:#0f3460;border-left:4px solid #00b4d8;padding:1rem 1.2rem;border-radius:0 8px 8px 0;margin:1.5rem 0}
+.tldr strong{color:#90e0ef}
+.case{background:#1a1a2e;border:1px solid #2a2a4e;border-radius:14px;padding:1.4rem;margin:1.4rem 0}
+.case-pain{background:#111;border:1px solid #223;border-radius:8px;padding:.8rem 1rem;margin:.8rem 0;color:#cdd6e0;font-size:.95rem}
+.case-pain strong{color:#90e0ef;display:block;margin-bottom:.2rem;font-size:.85rem;text-transform:uppercase;letter-spacing:.5px}
+.case-cta{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+.btn{display:inline-block;background:linear-gradient(135deg,#0088cc,#00b4d8);color:#fff;padding:.6rem 1.2rem;border-radius:10px;font-weight:600;font-size:.92rem;transition:opacity .2s}
+.btn:hover{opacity:.85;text-decoration:none}
+.btn-secondary{background:transparent;border:1px solid #0088cc;color:#00b4d8}
+.compare{background:#111;border:1px solid #2a2a4e;border-radius:12px;padding:1rem;margin:1.5rem 0;overflow-x:auto}
+.compare table{width:100%;border-collapse:collapse;color:#cdd6e0;font-size:.9rem;min-width:520px}
+.compare th{text-align:left;padding:.6rem .5rem;color:#90e0ef;border-bottom:1px solid #2a2a4e;font-weight:600}
+.compare td{padding:.6rem .5rem;border-bottom:1px solid #1a1a2e;vertical-align:top}
+.compare tr:last-child td{border-bottom:none}
+.faq{margin:1.5rem 0}
+.faq-item{background:#1a1a2e;border:1px solid #2a2a4e;border-radius:12px;padding:1.1rem 1.2rem;margin-bottom:.8rem}
+.faq-item h3{color:#fff;font-size:1.05rem;margin-bottom:.4rem;border:none;padding:0}
+.faq-item p{color:#a4b0bf;margin:0;font-size:.95rem}
+.related{background:#0f3460;border-radius:12px;padding:1.2rem;margin:2rem 0;text-align:center}
+.related h3{color:#fff;margin-bottom:.8rem}
+.related a{display:inline-block;margin:.3rem .4rem;color:#90e0ef}
+.footer{text-align:center;padding:2rem 1rem;color:#556;font-size:.85rem;border-top:1px solid #1a1a2e;margin-top:2rem}
+.footer a{color:#77aacc}
+@media(max-width:500px){
+.hero h1{font-size:1.65rem}
+.hero{padding:2rem 1rem 1.5rem}
+article h2{font-size:1.3rem}
+.case{padding:1.1rem}
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Бот для запису в салон краси: як працює і скільки коштує",
+ "description": "Бот для запису в салон краси: як виглядає запис для клієнтки, що бачить адміністратор, синхронізація з Google Calendar і чому це краще за Instagram-директ від трьох майстрів. Ціна $79 + $12/міс.",
+ "author": {
+  "@type": "Person",
+  "name": "Charlie Morrison",
+  "url": "https://charliemorrison.dev/about"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "BotCraft Group",
+  "url": "https://botcraftgroup.com/"
+ },
+ "datePublished": "2026-07-09",
+ "dateModified": "2026-07-09",
+ "mainEntityOfPage": "https://botcraftgroup.com/blog/bot-dlya-zapysu-v-salon-krasy/",
+ "inLanguage": "uk-UA"
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Чи треба клієнтці щось встановлювати?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Тільки Telegram, який у неї майже напевно вже є. Ніякої реєстрації, ніякого застосунку салону, ніякого пароля. Вона натискає посилання з вашого профілю і одразу опиняється в чаті з ботом."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Що буде, якщо два майстри працюють в одні години?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Розклад у кожного свій. Бот тримає окремі слоти для кожного майстра і пропонує клієнтці лише ті, що вільні саме в обраного. Якщо вона обрала «будь-хто вільний», бот сам віддасть запис тому, у кого є вікно."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Скільки часу займе запуск?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Два-три робочі дні від моменту, коли ви надішлете список послуг, майстрів і робочі години. Більшість часу йде не на техніку, а на узгодження текстів і розкладу. Бот віддається готовим, під вашою назвою."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Чи можна лишити і директ, і бота?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Так, і на початку так і роблять. Посилання на бота ставлять у шапку профілю, а директ лишається для питань. За місяць-два видно, що більшість записів іде через бота, і адміністратор перестає бути диспетчером."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Кому база клієнтів належить?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Вам. Телефони і історія візитів лежать в окремій базі вашого бота, її можна вивантажити файлом у будь-який момент. На відміну від Instagram, де контакти живуть усередині акаунта і зникають разом з ним."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="hero">
+<h1>Бот для запису в салон краси: як працює і скільки коштує</h1>
+<p class="sub">Клієнтка обирає майстра і час сама, о будь-якій годині. Адміністратор не переписується в директі.</p>
+<p class="meta">Оновлено 2026-07-09 · BotCraft Group</p>
+</header>
+
+<div class="crumbs"><a href="/">botcraftgroup.com</a> / Блог / Бот для запису в салон краси</div>
+
+<article>
+<div class="tldr">
+<strong>Коротко.</strong> Бот для запису в салон краси — це чат у Telegram, де клієнтка обирає майстра, послугу і вільний час, а запис одразу лягає в календар. Адміністратор не переписується в директі. Коштує $79 налаштування і $12 на місяць. Має сенс від трьох майстрів; для одного — навряд.
+</div>
+
+<p>Субота, десята ранку. Адміністратор відповідає в Instagram-директі трьом клієнткам одночасно, одна з них питає «а на 14:00 вільно?», і поки він гортає паперовий журнал, та сама година вже зайнята по телефону. Далі — незручний дзвінок і перенос.</p>
+
+<p>Це не проблема поганого адміністратора. Це проблема того, що запис живе в трьох місцях: у директі, в журналі і в голові майстра. Бот прибирає два з трьох.</p>
+
+<p>Нижче — як саме виглядає запис через бота, що з цього бачить власник, і в яких салонах воно не окупиться.</p>
+
+<h2>Як виглядає запис для клієнтки — крок за кроком</h2>
+
+<p>Клієнтка натискає посилання з вашого Instagram-профілю і опиняється в Telegram. Технічно це звичайний <a href="https://core.telegram.org/bots">Telegram-бот</a>, тільки замість команд у нього кнопки. Далі чотири екрани, все кнопками, нічого писати руками не треба.</p>
+
+<ol>
+<li><strong>Послуга.</strong> Список кнопок: манікюр, педикюр, брови, фарбування. Біля кожної — тривалість і ціна.</li>
+<li><strong>Майстер.</strong> Або конкретна людина, або «будь-хто вільний». Другий варіант обирають частіше, ніж думають власники.</li>
+<li><strong>Час.</strong> Бот показує тільки реально вільні слоти цього майстра під цю послугу. Зайнятого часу клієнтка не бачить, тому й не питає про нього.</li>
+<li><strong>Підтвердження.</strong> Ім'я, телефон, кнопка «Записатись». Телефон бот запам'ятовує — наступного разу його не питають.</li>
+</ol>
+
+<p>Усе. За тридцять секунд, о другій ночі, без жодної людини по той бік. Напередодні візиту бот сам нагадує: «Завтра о 14:00, манікюр, майстер Оля». Кнопки «Підтверджую» і «Перенести» — прямо в тому ж повідомленні.</p>
+
+<p>Ось <a href="https://t.me/cm_demo_order_bot">живий демо-бот</a> — можна пройти весь шлях самому, він нічого не запише в справжній календар.</p>
+
+<div class="case">
+<div class="case-pain"><strong>Що зникає</strong>Переписка «а коли вільно?» → «а о 15?» → «ой, вже зайнято». Клієнтка бачить лише те, що дійсно можна забронювати.</div>
+<div class="case-cta">
+<a class="btn" href="https://t.me/cm_demo_order_bot">Спробувати демо</a>
+<a class="btn" href="/docs/orderbot.html">Як це налаштовується</a>
+</div>
+</div>
+
+<h2>Що бачить адміністратор / власник салону</h2>
+
+<p>З іншого боку бот виглядає інакше. Адміністратор отримує повідомлення про кожен новий запис і має окрему команду зі списком на сьогодні та на завтра: час, послуга, майстер, ім'я, телефон.</p>
+
+<p>Що з цим можна робити:</p>
+
+<ul>
+<li><strong>Перенести або скасувати</strong> запис у два натискання — клієнтці автоматично летить повідомлення про зміну.</li>
+<li><strong>Закрити слот</strong> руками, якщо майстер захворів або прийшов хтось з вулиці.</li>
+<li><strong>Подивитись історію клієнтки</strong>: коли була, до кого, на що. Це не CRM рівня <a href="https://keycrm.app/" rel="nofollow">KeyCRM</a>, але для салону на три крісла закриває питання.</li>
+<li><strong>Вивантажити записи</strong> за місяць, якщо бухгалтерія просить.</li>
+</ul>
+
+<p>Окрема річ, яку недооцінюють — <em>телефони лишаються у вас</em>. Instagram може заблокувати акаунт, і разом з ним піде вся переписка з контактами. База в боті — ваша, її можна забрати файлом.</p>
+
+<p>Ще один момент, про який питають на другому тижні роботи: що робити з тими, хто записався і не прийшов. Бот тут не чарівник, але дві речі він робить. Нагадування напередодні зменшує кількість забутих візитів само по собі — людина або підтверджує, або одразу переносить, і слот встигає піти комусь іншому. А якщо клієнтка двічі не прийшла, адміністратор бачить це в її історії ще до того, як підтвердити третій запис.</p>
+
+<p>Передоплату бот теж уміє просити, але ми зазвичай радимо не вмикати її одразу. Салон, який на старті вимагає гроші наперед від людини, що вперше натиснула кнопку, втрачає більше записів, ніж рятує від неявок. Це має сенс хіба що на довгих і дорогих послугах — фарбування на три години, нарощування.</p>
+
+<h2>Інтеграція з календарем майстра — Google або Telegram</h2>
+
+<p>Тут є розвилка, і вона залежить від того, як салон уже працює.</p>
+
+<p><strong>Варіант перший: календар живе в боті.</strong> Розклад майстрів налаштовується один раз (робочі дні, години, обід), далі бот сам рахує вільні слоти. Майстер бачить свій день у Telegram. Нічого зовнішнього підключати не треба, і це той варіант, який обирає більшість салонів.</p>
+
+<p><strong>Варіант другий: синхронізація з <a href="https://developers.google.com/workspace/calendar/api/guides/overview">Google Calendar</a>.</strong> Кожен запис створює подію в календарі майстра, а зайняті події з календаря блокують слоти в боті. Підходить, якщо майстри вже роками ведуть Google-календар і не хочуть переучуватись. Коштує додаткового налаштування, бо в кожного майстра свій календар і свої права доступу.</p>
+
+<p>Чесно: другий варіант ламається частіше. Майстер видалив подію не в тому календарі — і слот лишився зайнятим. Якщо у вас немає причини триматись за Google, беріть перший.</p>
+
+<p>Є ще третій шлях, про який часто питають — «а можна просто в наш існуючий CRM?». Можна, якщо в нього є API. Але тут варто рахувати: інтеграція з чужою системою — це разова робота під конкретну систему, і вона дорожча за сам бот. Салони на три-чотири крісла зазвичай виявляють, що ніякого CRM у них насправді немає, є Excel і пам'ять адміністратора.</p>
+
+<h2>Чому це краще ніж Instagram-директ для салону на 3+ майстри</h2>
+
+<p>Для одного майстра, який приймає п'ять клієнток на день, директ працює нормально. Бот там радше іграшка — окупиться, але не змінить нічого.</p>
+
+<p>Математика ламається на трьох майстрах. Три паралельні розклади, які треба тримати в голові одночасно, плюс людина, що відповідає в директі й не бачить, що саме зараз забронювали по телефону. Звідси подвійні записи.</p>
+
+<p>Що конкретно змінюється:</p>
+
+<ul>
+<li><strong>Запис уночі.</strong> Директ о 23:40 читають зранку. Бот записує о 23:40.</li>
+<li><strong>Один розклад замість трьох.</strong> Слот або вільний, або ні — двом людям його не віддати.</li>
+<li><strong>Нагадування самі.</strong> Не «адміністратор обдзвонить, якщо встигне».</li>
+<li><strong>Директ звільняється</strong> під те, для чого він насправді придатний — питання, фото робіт, суперечки.</li>
+</ul>
+
+<p>Перший салон, з яким ми про це говорили, відмовився. Аргумент був такий: «наші клієнтки старші за сорок, вони не сидять у Telegram». Через два місяці власниця написала сама — виявилось, що сидять, просто не в тих чатах, де вона шукала. Це не мораль про упертість, це про те, що припущення про власну аудиторію варто перевіряти, а не вгадувати.</p>
+
+<table>
+<thead><tr><th>Ситуація</th><th>Instagram-директ</th><th>Бот</th></tr></thead>
+<tbody>
+<tr><td>Запис о 23:40</td><td>Прочитають зранку</td><td>Записано одразу</td></tr>
+<tr><td>Три майстри паралельно</td><td>Тримати в голові</td><td>Один спільний розклад</td></tr>
+<tr><td>Нагадування напередодні</td><td>Руками, якщо встигли</td><td>Автоматично</td></tr>
+<tr><td>Контакти клієнток</td><td>Всередині акаунта</td><td>Ваш файл</td></tr>
+</tbody>
+</table>
+
+<p>Якщо у вас один майстер — не беріть бота. Серйозно. Спершу дочекайтесь другого крісла.</p>
+
+<h2>Скільки це коштує</h2>
+
+<p>$79 разово за налаштування і $12 на місяць за роботу бота. У налаштування входить ваш список послуг, майстри, робочі години, тексти повідомлень і сам бот під вашим брендом. Місячна плата — це хостинг, оновлення і те, що воно просто працює.</p>
+
+<p>Немає відсотка з записів і немає плати за клієнта. Детальний розклад цін — у статті <a href="/blog/skilky-koshtuye-bot-dlya-salonu-krasy/">скільки коштує бот для салону краси</a>, а загальні тарифи на всі типи ботів — у <a href="/blog/skilky-koshtuye-telegram-bot-dlya-biznesu-v-ukrayini/">розборі цін на Telegram-бота для бізнесу</a>.</p>
+
+<p>Якщо потрібен не запис, а нагадування і повторні візити — це інший бот, про нього окремо: <a href="/blog/telegram-bot-dlya-zapysu-kliyentiv/">бот для запису клієнтів</a>.</p>
+
+<div class="case">
+<div class="case-cta">
+<a class="btn" href="https://t.me/cm_demo_order_bot">Пройти демо за 30 секунд</a>
+<a class="btn" href="/">Тарифи і три типи ботів</a>
+</div>
+</div>
+
+<h2>Питання-відповіді</h2>
+
+<div class="faq-list">
+
+<div class="faq-item">
+<h3>Чи треба клієнтці щось встановлювати?</h3>
+<p>Тільки Telegram, який у неї майже напевно вже є. Ніякої реєстрації, ніякого застосунку салону, ніякого пароля. Вона натискає посилання з вашого профілю і одразу опиняється в чаті з ботом.</p>
+</div>
+
+<div class="faq-item">
+<h3>Що буде, якщо два майстри працюють в одні години?</h3>
+<p>Розклад у кожного свій. Бот тримає окремі слоти для кожного майстра і пропонує клієнтці лише ті, що вільні саме в обраного. Якщо вона обрала «будь-хто вільний», бот сам віддасть запис тому, у кого є вікно.</p>
+</div>
+
+<div class="faq-item">
+<h3>Скільки часу займе запуск?</h3>
+<p>Два-три робочі дні від моменту, коли ви надішлете список послуг, майстрів і робочі години. Більшість часу йде не на техніку, а на узгодження текстів і розкладу. Бот віддається готовим, під вашою назвою.</p>
+</div>
+
+<div class="faq-item">
+<h3>Чи можна лишити і директ, і бота?</h3>
+<p>Так, і на початку так і роблять. Посилання на бота ставлять у шапку профілю, а директ лишається для питань. За місяць-два видно, що більшість записів іде через бота, і адміністратор перестає бути диспетчером.</p>
+</div>
+
+<div class="faq-item">
+<h3>Кому база клієнтів належить?</h3>
+<p>Вам. Телефони і історія візитів лежать в окремій базі вашого бота, її можна вивантажити файлом у будь-який момент. На відміну від Instagram, де контакти живуть усередині акаунта і зникають разом з ним.</p>
+</div>
+
+</div>
+
+<div class="related"><h3>Споріднені матеріали</h3>
+<a href="/docs/orderbot.html">Гайд OrderBot</a> ·
+<a href="/blog/skilky-koshtuye-bot-dlya-salonu-krasy/">Скільки коштує бот для салону краси</a> ·
+<a href="/blog/telegram-bot-dlya-zapysu-kliyentiv/">Бот для запису клієнтів</a> ·
+<a href="/3-typy-telegram-botiv/">Який бот обрати для бізнесу</a> ·
+<a href="/">Усі три SKU + тарифи</a>
+</div>
+
+</article>
+
+<footer class="footer">
+<p>© 2026 BotCraft Group · <a href="/">botcraftgroup.com</a> · support@botcraftgroup.com</p>
+<p style="margin-top:.4rem"><a href="/">На головну</a></p>
+</footer>
+
+</body>
+</html>
