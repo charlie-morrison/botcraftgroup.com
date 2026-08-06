@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Бот для майстра нігтів: запис на манікюр за 4 дотики | BotCraft Group</title>
+<meta name="description" content="Бот для майстра нігтів: як клієнтка обирає манікюр, педикюр чи нарощування, як підв'язати фото робіт і чим це відрізняється від салонного бота. $79 налаштування + $12/міс.">
+<meta name="keywords" content="бот для майстра нігтів, запис на манікюр, telegram бот манікюр, онлайн запис нігті, бот для нігтьового сервісу">
+<meta name="author" content="Charlie Morrison">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Бот для майстра нігтів: запис на манікюр без переписки в директі">
+<meta property="og:description" content="Запис на манікюр через Telegram-бота: послуга, вільні вікна, нагадування напередодні. Без переписки в директі. $79 + $12/міс.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://botcraftgroup.com/blog/bot-dlya-maystra-nigtiv/">
+<meta property="og:image" content="https://botcraftgroup.com/og/default.png">
+<meta property="og:locale" content="uk_UA">
+<meta property="article:published_time" content="2026-08-06T09:30:00+03:00">
+<meta property="article:author" content="Charlie Morrison">
+<link rel="canonical" href="https://botcraftgroup.com/blog/bot-dlya-maystra-nigtiv/">
+<link rel="alternate" hreflang="uk" href="https://botcraftgroup.com/blog/bot-dlya-maystra-nigtiv/">
+<link rel="alternate" hreflang="x-default" href="https://botcraftgroup.com/blog/bot-dlya-maystra-nigtiv/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0a0a;color:#e0e0e0;min-height:100vh;line-height:1.6}
+a{color:#00b4d8;text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{text-align:center;padding:3rem 1rem 2rem;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%)}
+.hero h1{font-size:2.1rem;margin-bottom:.6rem;background:linear-gradient(90deg,#00b4d8,#90e0ef);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.25;max-width:760px;margin-left:auto;margin-right:auto}
+.hero .sub{color:#8899aa;font-size:1.05rem;max-width:600px;margin:.6rem auto 0}
+.hero .meta{color:#556;font-size:.85rem;margin-top:1rem}
+.crumbs{max-width:760px;margin:1.5rem auto 0;padding:0 1rem;font-size:.85rem;color:#7a8a99}
+.crumbs a{color:#77aacc}
+article{max-width:760px;margin:1.5rem auto;padding:0 1rem}
+article h2{color:#fff;font-size:1.5rem;margin:2rem 0 .8rem;border-left:3px solid #00b4d8;padding-left:.8rem}
+article h3{color:#cdd6e0;font-size:1.15rem;margin:1.4rem 0 .5rem}
+article p{color:#cdd6e0;margin-bottom:1rem}
+article ul,article ol{margin:0 0 1rem 1.5rem;color:#cdd6e0}
+article li{margin-bottom:.4rem}
+article strong{color:#fff}
+article em{color:#90e0ef;font-style:normal;background:#0f1a2e;padding:0 6px;border-radius:4px}
+.tldr{background:#0f3460;border-left:4px solid #00b4d8;padding:1rem 1.2rem;border-radius:0 8px 8px 0;margin:1.5rem 0}
+.tldr strong{color:#90e0ef}
+.case{background:#1a1a2e;border:1px solid #2a2a4e;border-radius:14px;padding:1.4rem;margin:1.4rem 0}
+.case-pain{background:#111;border:1px solid #223;border-radius:8px;padding:.8rem 1rem;margin:.8rem 0;color:#cdd6e0;font-size:.95rem}
+.case-pain strong{color:#90e0ef;display:block;margin-bottom:.2rem;font-size:.85rem;text-transform:uppercase;letter-spacing:.5px}
+.case-cta{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+.btn{display:inline-block;background:linear-gradient(135deg,#0088cc,#00b4d8);color:#fff;padding:.6rem 1.2rem;border-radius:10px;font-weight:600;font-size:.92rem;transition:opacity .2s}
+.btn:hover{opacity:.85;text-decoration:none}
+.btn-secondary{background:transparent;border:1px solid #0088cc;color:#00b4d8}
+.compare{background:#111;border:1px solid #2a2a4e;border-radius:12px;padding:1rem;margin:1.5rem 0;overflow-x:auto}
+.compare table{width:100%;border-collapse:collapse;color:#cdd6e0;font-size:.9rem;min-width:520px}
+.compare th{text-align:left;padding:.6rem .5rem;color:#90e0ef;border-bottom:1px solid #2a2a4e;font-weight:600}
+.compare td{padding:.6rem .5rem;border-bottom:1px solid #1a1a2e;vertical-align:top}
+.compare tr:last-child td{border-bottom:none}
+.faq{margin:1.5rem 0}
+.faq-item{background:#1a1a2e;border:1px solid #2a2a4e;border-radius:12px;padding:1.1rem 1.2rem;margin-bottom:.8rem}
+.faq-item h3{color:#fff;font-size:1.05rem;margin-bottom:.4rem;border:none;padding:0}
+.faq-item p{color:#a4b0bf;margin:0;font-size:.95rem}
+.related{background:#0f3460;border-radius:12px;padding:1.2rem;margin:2rem 0;text-align:center}
+.related h3{color:#fff;margin-bottom:.8rem}
+.related a{display:inline-block;margin:.3rem .4rem;color:#90e0ef}
+.footer{text-align:center;padding:2rem 1rem;color:#556;font-size:.85rem;border-top:1px solid #1a1a2e;margin-top:2rem}
+.footer a{color:#77aacc}
+@media(max-width:500px){
+.hero h1{font-size:1.65rem}
+.hero{padding:2rem 1rem 1.5rem}
+article h2{font-size:1.3rem}
+.case{padding:1.1rem}
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Бот для майстра нігтів: запис на манікюр без переписки в директі",
+ "description": "Бот для майстра нігтів: як клієнтка обирає манікюр, педикюр чи нарощування, як підв'язати фото робіт і чим це відрізняється від салонного бота. $79 налаштування + $12/міс.",
+ "author": {
+  "@type": "Person",
+  "name": "Charlie Morrison",
+  "url": "https://charliemorrison.dev/about"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "BotCraft Group",
+  "url": "https://botcraftgroup.com/"
+ },
+ "datePublished": "2026-08-06",
+ "dateModified": "2026-08-06",
+ "mainEntityOfPage": "https://botcraftgroup.com/blog/bot-dlya-maystra-nigtiv/",
+ "inLanguage": "uk-UA"
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Чи треба клієнтці щось встановлювати?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Тільки Telegram, який у неї майже напевно вже стоїть. Реєстрації немає, пароля немає, окремого застосунку теж. Вона тисне посилання з вашої шапки профілю і одразу опиняється в чаті з ботом."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "А якщо я працюю сама і графік плаває?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Закриваєте день або окремі години прямо з телефона, бот перестає їх пропонувати. Тим, хто вже записаний, нічого не ламається. Це основний сценарій приватного майстра, і він зроблений під нього, а не під салон."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Як бот рахує час на нарощування?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "До кожної послуги прив'язана своя тривалість. Нарощування закладається на дві з половиною-три години, корекція на годину двадцять. Бот сам не запропонує вікно, куди послуга фізично не влазить."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Клієнтки все одно будуть писати в директ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Частина — так, перші тижні. Посилання на бота ставлять у шапку профілю і кидають у відповідь на «а коли є вікно». За місяць більшість записів іде через бота сама, без нагадувань з вашого боку."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Чи можна брати передоплату?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Так, підключаємо оплату карткою на етапі підтвердження запису. Для нарощування і довгих послуг це помітно зменшує неявки — людина, яка заплатила навіть частину, приходить значно частіше."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Кому належить база клієнток?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Вам. Телефони та історія візитів лежать в окремій базі вашого бота, її можна вивантажити файлом будь-коли. На відміну від директу, де контакти живуть усередині акаунта і зникають разом з ним."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div class="hero">
+<h1>Бот для майстра нігтів: запис на манікюр без переписки в директі</h1>
+<p class="sub">Як виглядає запис, коли ви працюєте самі, чим це відрізняється від салонного бота і скільки це коштує.</p>
+<p class="meta">BotCraft Group · оновлено 6 серпня 2026</p>
+</div>
+
+<nav class="crumbs"><a href="/">Головна</a> · <a href="/blog/">Блог</a> · Бот для майстра нігтів</nav>
+
+<article>
+
+<div class="tldr">
+<strong>Коротко:</strong> майстру нігтів бот потрібен не для «автоматизації», а щоб не відповідати на «а на суботу є?» о пів на дванадцяту ночі. Клієнтка обирає послугу, бачить вільні вікна, записується. Ви бачите день у списку. Налаштування — $79, далі $12 на місяць. Запуск за два-три дні.
+</div>
+
+<p>Середній майстер нігтів витрачає на переписку в директі більше години на день. Не на роботу — на «привіт», «а скільки коштує», «а коли є вікно», «ой, я передумала на вівторок». Половина цих повідомлень приходить після дев'ятої вечора, коли ви вже не за столом і не пам'ятаєте напам'ять, що у вас у четвер.</p>
+
+<p>Бот забирає саме цю частину. Не творчу, не спілкування з клієнткою в кріслі — тільки диспетчерську.</p>
+
+<h2>Майстер сам vs салон — різні потреби, різна логіка бота</h2>
+
+<p>Це головне, що плутають. Бот для салону і бот для приватного майстра — не одне й те саме, і якщо взяти салонний, ви отримаєте купу непотрібних кнопок.</p>
+
+<p>У салоні бот вирішує задачу диспетчеризації: кілька майстрів, спільний розклад, клієнтка обирає «до кого». Там є адміністратор, який дивиться загальну картину, є питання «хто вільний у вівторок о 14:00 з тих, хто робить нарощування». Про цей сценарій ми писали окремо — <a href="/blog/skilky-koshtuye-bot-dlya-salonu-krasy/">скільки коштує бот для салону краси</a> розбирає саме його.</p>
+
+<p>Коли ви працюєте сама, «вибір майстра» зникає. Натомість вилазять три інші речі:</p>
+
+<ul>
+<li><strong>Тривалість дуже різна.</strong> Корекція — година двадцять. Нарощування з дизайном — три години. Якщо бот дає всім однакові слоти по годині, ви або перепишете половину записів, або будете сидіти з дірками.</li>
+<li><strong>Ви самі собі адміністратор.</strong> Вам не потрібна «панель керування». Потрібен список на завтра, який видно з телефона між двома клієнтками.</li>
+<li><strong>Робочий графік плаває.</strong> Дитина, лікар, поїздка по матеріали. Треба закрити четвер за дві години до нього, а не «редагувати шаблон розкладу».</li>
+</ul>
+
+<p>Тому бот для приватного майстра має бути тупіше і швидше. Три-чотири кнопки, а не меню на два екрани.</p>
+
+<div class="case">
+<div class="case-pain"><strong>Як це виглядає у клієнтки</strong>
+Відкрила посилання з вашої шапки профілю → обрала «Манікюр + покриття» → побачила вільні вікна на найближчі десять днів → тицьнула четвер 15:00 → лишила ім'я і телефон. Все. Чотири дотики, жодного повідомлення.</div>
+<div class="case-pain"><strong>Як це виглядає у вас</strong>
+Приходить сповіщення. Вранці бот надсилає список на день. Напередодні візиту клієнтка сама отримує нагадування — і саме воно прибирає більшість «ой, я забула».</div>
+<div class="case-cta">
+<a class="btn" href="https://t.me/cm_demo_order_bot">Потикати демо-бота</a>
+<a class="btn btn-secondary" href="/docs/orderbot.html">Що вміє OrderBot</a>
+</div>
+</div>
+
+<h2>Як виглядає вибір послуги — манікюр / педикюр / нарощування</h2>
+
+<p>Це те місце, де більшість готових ботів ламається. Вони дають плоский список послуг, а у нігтьового сервісу список не плоский.</p>
+
+<p>Робоча структура — два рівні, не більше. Перший: манікюр, педикюр, нарощування, зняття. Другий — уточнення всередині: покриття гель-лаком, френч, дизайн, ремонт одного нігтя. Три рівні вкладеності вже дратують, перевірено.</p>
+
+<p>До кожної позиції прив'язана своя тривалість, і саме з неї бот рахує вікна:</p>
+
+<div class="compare">
+<table>
+<tr><th>Послуга</th><th>Скільки закладати</th><th>Що ламається, якщо не закласти</th></tr>
+<tr><td>Манікюр + покриття</td><td>1 год 20 хв</td><td>—</td></tr>
+<tr><td>Педикюр</td><td>1 год 30 хв</td><td>Наїжджає на наступний запис</td></tr>
+<tr><td>Нарощування</td><td>2 год 30 хв — 3 год</td><td>Найчастіша причина переносів</td></tr>
+<tr><td>Зняття (окремо)</td><td>30 хв</td><td>Слот пропадає марно, якщо рахувати як годину</td></tr>
+</table>
+</div>
+
+<p>Окремо варто додати «зняття чужої роботи» як самостійну позицію з власною ціною. Майстри це роблять і так, але в директі це щоразу окрема розмова.</p>
+
+<p>Ціни бот показує одразу біля послуги. Це прибирає найчастіше перше питання і водночас відсіює тих, хто прийшов торгуватися. Загальну механіку запису ми детальніше розібрали в матеріалі про <a href="/blog/telegram-bot-dlya-zapysu-kliyentiv/">Telegram-бота для запису клієнтів</a>.</p>
+
+<h2>Фото робіт перед записом — як це підв'язати</h2>
+
+<p>Нігті продаються очима. Клієнтка не записується на «манікюр» — вона записується на конкретний вигляд, який побачила. І тут виникає незручність: портфоліо живе в Instagram, а запис ви хочете в боті.</p>
+
+<p>Три робочі способи, від найпростішого:</p>
+
+<ol>
+<li><strong>Галерея всередині бота.</strong> До кожної послуги — 5-8 фото ваших робіт. Клієнтка гортає прямо в чаті й записується з того ж екрана. Найкоротший шлях, але фото треба періодично оновлювати руками.</li>
+<li><strong>Посилання на конкретний альбом.</strong> Бот кидає посилання на ваш профіль або highlights, клієнтка дивиться і повертається. Простіше в підтримці, але ви щоразу відпускаєте людину в стрічку — і частина не повертається.</li>
+<li><strong>Референс від клієнтки.</strong> Після вибору слота бот пропонує надіслати фото того, що вона хоче. Ви бачите картинку ще до візиту й розумієте, скільки це насправді часу.</li>
+</ol>
+
+<p>Третій варіант недооцінений. Саме він рятує від ситуації, коли на «манікюр з покриттям» приходить дизайн на всі десять пальців, а у вас за цим записом наступна людина.</p>
+
+<p>Практична порада: не тягніть у бота все портфоліо. Вісім свіжих фото на послугу працюють краще за сотню — гортати сотню ніхто не буде.</p>
+
+<h2>Zapys, Nailio, Beauty-Bot — чим відрізняємось</h2>
+
+<p>Готові рішення для б'юті-сфери існують, і чесно: для частини майстрів їх достатньо. Різниця не в кількості функцій, а в тому, чиє це все.</p>
+
+<div class="compare">
+<table>
+<tr><th></th><th>Готові платформи</th><th>OrderBot від нас</th></tr>
+<tr><td>Бот</td><td>Спільний, ви — акаунт усередині</td><td>Ваш власний, ваша назва</td></tr>
+<tr><td>База клієнтів</td><td>На їхньому сервері</td><td>Ваша, вивантажується файлом</td></tr>
+<tr><td>Правки під вас</td><td>Що є в налаштуваннях</td><td>Дописуємо під ваш процес</td></tr>
+<tr><td>Оплата</td><td>Щомісяця, зростає з базою</td><td>$79 разово + $12/міс, фікс</td></tr>
+<tr><td>Якщо сервіс закриється</td><td>Ви лишаєтесь без бота</td><td>Бот і дані лишаються у вас</td></tr>
+</table>
+</div>
+
+<p>Платформи на кшталт <a href="https://joinposter.com/" rel="nofollow">галузевих сервісів автоматизації</a> сильні там, де вам треба «зараз і без розмов». Наш сенс інший: ви отримуєте окремого бота під своїм ім'ям, з даними, які нікуди не подінуться.</p>
+
+<p>Чесно про мінус: у нас немає застосунку з красивими графіками. Один клієнт через це спочатку відмовився — сказав, що хоче «як у великих». Повернувся за півтора місяця, бо графіки він так і не відкрив жодного разу, а платив за них щомісяця.</p>
+
+<p>Ще одна річ, яку варто сказати прямо: бот не збільшить кількість клієнток. Він прибирає години переписки і зменшує неявки. Якщо записів мало — проблема не в каналі запису.</p>
+
+<h2>Скільки це коштує і за скільки запускається</h2>
+
+<p>$79 — налаштування під вас: ваші послуги, ціни, тривалості, графік, тексти, фото. $12 на місяць — хостинг і підтримка. Ціна не залежить від кількості клієнток у базі.</p>
+
+<p>Запуск — два-три робочі дні від моменту, коли ви надсилаєте список послуг з цінами і свій графік. Більша частина часу йде не на техніку, а на узгодження формулювань.</p>
+
+<div class="case">
+<div class="case-cta">
+<a class="btn" href="https://t.me/cm_demo_order_bot">Подивитись демо-бота запису</a>
+<a class="btn btn-secondary" href="/">Тарифи і всі три боти</a>
+</div>
+</div>
+
+<h2>Питання-відповіді</h2>
+
+<div class="faq">
+
+<div class="faq-item">
+<h3>Чи треба клієнтці щось встановлювати?</h3>
+<p>Тільки Telegram, який у неї майже напевно вже стоїть. Реєстрації немає, пароля немає, окремого застосунку теж. Вона тисне посилання з вашої шапки профілю і одразу опиняється в чаті з ботом.</p>
+</div>
+
+<div class="faq-item">
+<h3>А якщо я працюю сама і графік плаває?</h3>
+<p>Закриваєте день або окремі години прямо з телефона, бот перестає їх пропонувати. Тим, хто вже записаний, нічого не ламається. Це основний сценарій приватного майстра, і він зроблений під нього, а не під салон.</p>
+</div>
+
+<div class="faq-item">
+<h3>Як бот рахує час на нарощування?</h3>
+<p>До кожної послуги прив'язана своя тривалість. Нарощування закладається на дві з половиною-три години, корекція на годину двадцять. Бот сам не запропонує вікно, куди послуга фізично не влазить.</p>
+</div>
+
+<div class="faq-item">
+<h3>Клієнтки все одно будуть писати в директ?</h3>
+<p>Частина — так, перші тижні. Посилання на бота ставлять у шапку профілю і кидають у відповідь на «а коли є вікно». За місяць більшість записів іде через бота сама, без нагадувань з вашого боку.</p>
+</div>
+
+<div class="faq-item">
+<h3>Чи можна брати передоплату?</h3>
+<p>Так, підключаємо оплату карткою на етапі підтвердження запису. Для нарощування і довгих послуг це помітно зменшує неявки — людина, яка заплатила навіть частину, приходить значно частіше.</p>
+</div>
+
+<div class="faq-item">
+<h3>Кому належить база клієнток?</h3>
+<p>Вам. Телефони та історія візитів лежать в окремій базі вашого бота, її можна вивантажити файлом будь-коли. На відміну від директу, де контакти живуть усередині акаунта і зникають разом з ним.</p>
+</div>
+
+</div>
+
+<div class="related"><h3>Споріднені матеріали</h3>
+<a href="/docs/orderbot.html">Гайд OrderBot</a> ·
+<a href="/blog/telegram-bot-dlya-zapysu-kliyentiv/">Бот для запису клієнтів</a> ·
+<a href="/blog/skilky-koshtuye-bot-dlya-salonu-krasy/">Скільки коштує бот для салону краси</a> ·
+<a href="/3-typy-telegram-botiv/">Який бот обрати для бізнесу</a> ·
+<a href="/">Усі три SKU + тарифи</a>
+</div>
+
+</article>
+
+<footer class="footer">
+<p>© 2026 BotCraft Group · <a href="/">botcraftgroup.com</a> · support@botcraftgroup.com</p>
+<p style="margin-top:.4rem"><a href="/">На головну</a></p>
+</footer>
+
+
+</body>
+</html>
